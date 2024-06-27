@@ -99,7 +99,7 @@ const Todos = ({ data, isValidating, mutate }: any) => {
                                                 <CiMenuKebab className=' text-2xl text-gray-700 cursor-pointer' />
 
 
-                                                <article onClick={() => handleEdit(item?._id)} className='z-10 hidden group-hover:block absolute px-4 py-2 bg-white -top-10 left-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] text-gray-600 cursor-pointer font-semibold tracking-wide rounded-lg'>Completed</article>
+                                                <article onClick={() => handleEdit(item?._id)} className='z-10 hidden group-hover:block absolute px-4 py-2 bg-white -top-10 md:left-4 -left-20 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] text-gray-600 cursor-pointer font-semibold tracking-wide rounded-lg'>Completed</article>
 
                                             </div>
                                         }
