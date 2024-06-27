@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #828e83d5 transparent;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.25em;
+  height: 0.25em;
+}
+::-webkit-scrollbar-thumb {
+  background: #828e83d5;
+  border-radius: 10em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll_bar-none::-webkit-scrollbar {
+  display: none;
+}
+*:disabled {
+  cursor: not-allowed;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth !important;
+}
+body.modal-open {
+  overflow: hidden; /* see "modal-open" in Modal.tsx */
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+@layer components {
+  .main-container {
+    @apply w-full lg:max-w-[1360px] 2xl:max-w-[1536px] mx-auto px-4 md:px-6 xl:px-12 2xl:px-6;
+  }
+  .textColor {
+    color: linear-gradient(to top, #17880e 20%, #17880e 35%, #ffffff 45%);
+  }
+  
+}
